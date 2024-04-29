@@ -1,0 +1,25 @@
+{
+  "name": "ulovdomov/php-code-style",
+  "description": "Code style ruleset for PHP app in ulovdomov organization",
+  "type": "library",
+  "authors": [
+    {
+      "name": "UlovDomov..cz development team",
+      "email": "dev@ulovdomov.cz"
+    },
+    {
+      "name": "Ondřej Pech",
+      "email": "info@ondrej-pech.cz"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">= 8.0",
+    "roave/security-advisories": "@dev",
+    "slevomat/coding-standard": "^8.15"
+  },
+  "scripts": {
+    "phpcs:73": "php vendor/bin/phpcs --standard=ruleset.73.xml",
+    "phpcs": "php -d memory_limit=-1 vendor/bin/phpcs --standard=ruleset.xml ../is/app --cache=cache.json"
+  }
+}
