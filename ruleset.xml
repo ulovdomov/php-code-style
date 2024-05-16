@@ -10,9 +10,6 @@
     <file>app</file>
     <file>src</file>
 
-    <!-- Import own custom sniffs -->
-    <rule ref="./.infrastructure/code-style"/>
-
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.Classes.OpeningBraceSameLine">
