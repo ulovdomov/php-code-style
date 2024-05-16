@@ -61,7 +61,7 @@
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
     <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing">
         <properties>
-            <property name="linesCountBetweenMembers" value="2"/>
+            <property name="linesCountBetweenMembers" value="1"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
@@ -75,8 +75,8 @@
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.MethodSpacing">
         <properties>
-            <property name="minLinesCount" value="2"/>
-            <property name="maxLinesCount" value="2"/>
+            <property name="minLinesCount" value="1"/>
+            <property name="maxLinesCount" value="1"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
