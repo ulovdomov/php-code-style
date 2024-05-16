@@ -278,10 +278,7 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"><!-- TODO IS-632 Ignoruji kvuli $defaultName, ktere dedi z predka v symfony--><!-- TODO a v symfony to nemaji jeste PHP7.4 ready -->
-        <exclude-pattern>Console/*Command.php</exclude-pattern>
-        <exclude-pattern>*Mapper.php</exclude-pattern><!-- Ignore pro ActiveRow|False -->
-        <exclude-pattern>app/CronsModule/Models/CzechInstallationsModel.php</exclude-pattern>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
         <properties>
             <property name="enableNativeTypeHint" value="true"/>
             <property name="enableMixedTypeHint" value="true"/>
@@ -411,12 +408,9 @@
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint"/>
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
         <exclude name="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable.DisallowedSuperGlobalVariable"/>
-
-        <!-- TODO Probrat -->
         <exclude name="SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys.IncorrectKeyOrder"/>
         <exclude name="SlevomatCodingStandard.Classes.RequireSelfReference.RequiredSelfReference"/>
-        <exclude
-                name="SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator.TrailingMultiLineTernaryOperatorUsed"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.DisallowTrailingMultiLineTernaryOperator.TrailingMultiLineTernaryOperatorUsed"/>
 
         <!-- Needed for Nextras ORM AND/OR clauses -->
         <exclude name="SlevomatCodingStandard.Arrays.DisallowPartiallyKeyed.DisallowedPartiallyKeyed"/>
