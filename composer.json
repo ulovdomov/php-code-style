@@ -15,7 +15,6 @@
   "license": "MIT",
   "require": {
     "php": ">= 8.0",
-    "roave/security-advisories": "@dev",
     "slevomat/coding-standard": "^8.15"
   },
   "scripts": {
