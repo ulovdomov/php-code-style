@@ -15,7 +15,8 @@
   "license": "MIT",
   "require": {
     "php": ">= 8.0",
-    "slevomat/coding-standard": "~8.0"
+    "slevomat/coding-standard": ">=8.23 <9.0",
+    "squizlabs/php_codesniffer": ">=4.0 <5.0"
   },
   "scripts": {
     "phpcs:73": "php vendor/bin/phpcs --standard=ruleset.73.xml",

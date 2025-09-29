@@ -239,11 +239,11 @@
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions"/>
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions">
         <properties>
-            <property name="exclude" type="array" value="fn"/>
+            <property name="exclude" type="array">
+                <element value="fn"/>
+            </property>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
@@ -316,10 +316,8 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+    <rule ref="SlevomatCodingStandard.TypeHints.DNFTypeHintFormat">
         <properties>
-            <property name="enable" type="bool" value="true"/>
-            <property name="withSpaces" type="string" value="no"/>
             <property name="shortNullable" type="string" value="no"/>
             <property name="nullPosition" type="string" value="last"/>
         </properties>
